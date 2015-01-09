@@ -1,0 +1,128 @@
+/* Common, default styles for the notification box */
+/* notice */
+$notice-color: rgba(42,45,50,0.85);
+$notice-color-type: rgba(250,251,255,0.95);
+$notice-shadow: rgba(0,0,0,0.6);
+
+$notice-icon-default: black;
+$notice-icon-hover: white;
+
+/* warning */
+$warning-color: rgba(241, 196, 15, 0.85);
+$warning-color-type: rgba(250,251,255,0.95);
+$warning-shadow: rgba(243, 156, 18, 0.45); 
+
+$warning-icon-default: rgba(243, 156, 18, 1); ;
+$warning-icon-hover: white;
+
+/* error */
+$error-color: rgba(231, 76, 60, 0.95);
+$error-color-type: rgba(250,251,255,0.95);
+$error-shadow: rgba(192, 57, 43, 0.85);
+
+$error-icon-default: rgba(192, 57, 43, 1);
+$error-icon-hover: white; 
+
+
+.nmsg-box {
+	position: fixed;
+	background: $notice-color;
+	padding: 22px;
+	line-height: 1.4;
+	color: $notice-color-type;
+	font-size: 90%;
+	font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+	z-index: 9999999;
+}
+
+.nmsg-box p, .nmsg-box ul{ margin:0; }
+
+.nmsg-box-shadow{
+	background-color: $notice-shadow;
+	width: 4.5em;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 1;
+}
+
+.nmsg-box-container{
+	position: relative;
+	z-index: 2;
+}
+
+/* To bar notifications */
+.nmsg-box.nmsg-bar{
+	top:0;
+	left:0;
+	width: 100%;
+}
+
+.nmsg-bar .nmsg-close{
+	background: transparent;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	right: 20px;
+	color: $notice-icon-default;
+}
+
+.nmsg-close {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	cursor: pointer;
+	z-index: 9999999;
+
+	&:hover{ color: $notice-icon-hover; }
+}
+
+.nmsg-effect-slide-top .icon {
+	position: absolute;
+	display: block;
+	font-size: 109%;
+	top: 50%;
+	left: -0.25em;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+
+.nmsg-effect-slide-top p, .nmsg-effect-slide-top ul{
+	padding: 0 3.2em;
+	font-size: 1.2em;
+	display: inline-block;
+}
+
+
+.nmsg-box.nmsg-type-notice{ 
+	background: $notice-color; 
+	color: $notice-color-type;
+	.nmsg-box-shadow{ background-color: $notice-shadow; }
+	.nmsg-close{
+		color: $notice-icon-default;
+		&:hover{ color: $notice-icon-hover; }
+	}
+}
+
+.nmsg-box.nmsg-type-warning{ 
+	background: $warning-color; 
+	color: $warning-color-type;
+	.nmsg-box-shadow{ background-color: $warning-shadow; }
+	.nmsg-close{
+		color: $warning-icon-default;
+		&:hover{ color: $warning-icon-hover; }
+	}
+}
+
+.nmsg-box.nmsg-type-error{ 
+	background: $error-color; 
+	color: $error-color-type;
+	.nmsg-box-shadow{ background-color: $error-shadow; }
+	.nmsg-close{
+		color: $error-icon-default;
+		&:hover{ color: $error-icon-hover; }
+	}
+}
