@@ -1,0 +1,25 @@
+{
+  "name": "notifications-cd",
+  "version": "0.0.1",
+  "homepage": "https://github.com/abFx/notifications-cd",
+  "authors": [
+    "Abe Garcia <abraham.garcia@naranya.com>"
+  ],
+  "description": "Codedrops notifications with tweenmax",
+  "main": "./src/notificationsTM.js",
+  "keywords": [
+    "notifications"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "classie": "~1.0.1",
+    "gsap": "~1.17.0"
+  }
+}
