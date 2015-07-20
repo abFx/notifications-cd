@@ -66,9 +66,9 @@
 		type: "notice",
 		// close button icon class, defaults to have gumbyframework icons
 		// defaults to i tag element
-		closeIcon : "icon-cancel",
+		closeIcon : "fi-x",
 		// message icon class, defaults to have gumbyframework
-		messageIcon : "icon-thumbs-up",
+		messageIcon : "fi-like",
 		// if user doesn't close notification it will hide automatically by 
 		// the following time
 		closeTimeOut : 5000,
