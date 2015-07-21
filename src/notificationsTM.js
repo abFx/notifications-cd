@@ -171,7 +171,7 @@
 			show : function( el ){
 				TweenMax.to( el, 1, {
 					x : 0,
-					y : 0,
+					y : '0%',
 				    z : 0,
 				    ease : "Quint.easeInOut",
 				} );
