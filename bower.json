@@ -18,7 +18,7 @@
     "test",
     "tests"
   ],
-  "devDependencies": {
+  "dependencies": {
     "classie": "~1.0.1",
     "gsap": "~1.17.0"
   }
